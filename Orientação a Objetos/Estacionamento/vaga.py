@@ -29,3 +29,7 @@ class Vaga:
     def ocupar(self, placa):
         self._livre = False
         self._placa = placa
+
+    def desocupar(self):
+        self._livre = True
+        self._placa = ''

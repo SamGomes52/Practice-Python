@@ -1,10 +1,10 @@
-class Carro:
+class Moto:
     def __init__(self):
         self.__placa = ''
         self.__estacionado = False
 
     def __str__(self):
-        return f'Placa do carro: {self.placa} | Estacionado: {self.estacionado}'
+        return f'Placa do moto: {self.placa} | Estacionado: {self.estacionado}'
         
     # Getters e Setters
     @property
@@ -19,7 +19,7 @@ class Carro:
     def estacionado(self):
         return self.__estacionado
     
-    # Ações do carro
+    # Ações da moto
     def estacionar(self, vaga):
         self.__estacionado = True
         vaga.ocupar(self.placa)
